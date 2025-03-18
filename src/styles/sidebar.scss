@@ -1,0 +1,105 @@
+.cx-sidebar {
+    ::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .cx-sidebar-wrapper {
+        transition: all 0.5s;
+        transition: all 0.4s ease-in-out;
+        width: 300px;
+        // border: 1px solid blue;
+        position: fixed;
+        top: 0;
+        z-index: 222;
+        height: 100vh;
+        padding-top: 10px;
+        // padding: 10px 20px 30px 10px;
+    }
+
+    .logoMain {
+        border-bottom: 1px solid black;
+        padding-bottom: 20px;
+    }
+
+    .logoMainshort {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sideBarContent {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        overflow: auto;
+        height: calc(100vh - 121px);
+
+        .sideBarMain {
+            .sideBarMainHeading {
+                padding: 20px;
+                color: #04080B;
+                font-size: 12px;
+                font-weight: 500;
+
+            }
+
+            .menulist {
+                .singleMenu {
+                    padding: 10px 20px 10px 20px;
+
+                    // border-left: 6px solid red;
+                    .icon-menu-name {
+                        display: block;
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+
+                        .icon-left {
+                            svg {
+                                height: 21px;
+                                width: 21px;
+                                margin-left: 3px;
+                            }
+
+                            margin-right: 15px;
+                        }
+                    }
+
+                    .menu-name {
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: #04080B;
+                    }
+
+                    transition: 0.1s ease-in-out;
+
+                    &:hover {
+                        border-left: 4px solid #1A6D73 !important;
+                        background-color: #F4F4F4;
+                        color: #1A6D73 !important;
+                    }
+                }
+
+                .singleMenuActiva {
+                    border-left: 4px solid #1A6D73 !important;
+                    background-color: #F4F4F4;
+                    color: #1A6D73 !important;
+
+                    .menu-name {
+                        color: #1A6D73;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sidebarActive {
+    width: 60px !important;
+    // padding: 15px !important;
+    transition: all 0.5s;
+
+    .sideBarMainHeading {
+        padding: 10px !important;
+        text-align: center;
+    }
+}

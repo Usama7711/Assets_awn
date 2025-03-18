@@ -1,0 +1,52 @@
+.page-wrapper {
+
+    .content {
+  
+      .employees-divs {
+        display: flex;
+        justify-content: space-between;
+        /* Ensures equal spacing */
+        flex-wrap: wrap;
+        /* Allows items to wrap if needed */
+        // gap: 5px; /* Adds space between items */
+      }
+  
+      .each-employee-div {
+        flex: 1;
+        /* Makes all items take up equal space */
+        max-width: 33.33%;
+        /* Ensures items fit within the row */
+        box-sizing: border-box;
+        /* Prevents padding from affecting width */
+        margin: 0;
+  
+      }
+  
+      .employee-div-formatting {
+        background: white;
+        padding: 10px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        /* Aligns content vertically */
+        font-weight: 700;
+        border-radius: 12px;
+        border: 1px solid #EAECF0;
+      }
+  
+    }
+  
+    .dropdown-select-css select {
+      background: white;
+      border: 1px solid #dee2e6;
+      height: 30px;
+      font-size: 12px;
+  
+    }
+   
+    .dashboard-heading-format{
+      font-weight: 600;
+      font-size:12px;
+  
+    }
+  }
