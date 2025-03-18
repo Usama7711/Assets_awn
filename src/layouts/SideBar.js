@@ -99,28 +99,27 @@ const SideBar = () => {
                                 </Link>
                             </div>
                             <div
-                                className={
-                                    currentRoute === "/Documents"
-                                        ? "singleMenu singleMenuActiva"
-                                        : "singleMenu"
-                                }
-                            >
-                                <Link to="/Documents" className='icon-menu-name' >
-                                    <div className="icon-left">
-                                        {currentRoute === "/Documents"
-                                            ? (
-                                                <img src={Documents_active} alt="" />
-                                            ) : (
-                                                <img src={Documents} alt="" />
-                                            )}
-                                    </div>
-                                    <div
-                                        className={sidebar ? "menu-name" : "d-none"}
-                                    >
-                                        Assets
-                                    </div>
-                                </Link>
-                            </div>
+  className={
+    currentRoute === "/assets"  // Change from "/Documents" to "/assets"
+      ? "singleMenu singleMenuActiva"
+      : "singleMenu"
+  }
+>
+  <Link to="/assets" className="icon-menu-name">  {/* Change "/Documents" to "/assets" */}
+    <div className="icon-left">
+      {currentRoute === "/assets"  // Change from "/Documents" to "/assets"
+        ? (
+          <img src={Documents_active} alt="" />
+        ) : (
+          <img src={Documents} alt="" />
+        )}
+    </div>
+    <div className={sidebar ? "menu-name" : "d-none"}>
+      Assets  {/* Ensure this text reflects the page you want */}
+    </div>
+  </Link>
+</div>
+
                         </div>
                     </div>
                     <div className="sideBarMain">
